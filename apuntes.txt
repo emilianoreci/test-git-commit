@@ -1,0 +1,58 @@
+/*************
+ * GIT RESET *
+ *************/
+te permite sacar un archivo que se haya puesto en el 
+stage(git add, sin que se haya pusheado)
+git reset index.htmlz //va a quitar ese archivo
+
+
+/***********
+ * GIT LOG *
+ ***********/
+Permite ver los commits echos
+
+
+/**********************************
+ * GIT CAMBIAR MENSAJE AL COMMITS *
+ **********************************/
+En caso que se quiera cambiar el contenido del msj del commit. Antes del push!!
+git commit --amend -m "nuevo mensaje"
+
+
+/**********
+ * GIT RM *
+ **********/
+ Permite eliminar un archivo y queda registrado
+ git rm index.html
+ git commit -m "se borro el archivo ..."
+
+/**************
+ * GIT REFLOG *
+ **************/
+ muestra todo el historial de los cambios.
+
+/*************
+ * GIT RESET *
+ *************/
+ git reset --hard hashcommit
+ ej
+ git reset --hard a6we85
+ 
+
+/************
+ * GIT DIFF *
+ ************/
+ muestra las diferencias en el archivo
+ git diff index.html
+
+
+
+/********************
+ * FLUJO DE TRABAJO *
+ ********************/
+
+            working directory (untracking)
+                    |           } git add
+            staging area
+                    |           } git commit
+            repository (local)
